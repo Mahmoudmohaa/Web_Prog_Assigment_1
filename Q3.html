@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Solve The Q3 In Assigement 1">
+    <title>Order Form with Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="checkbox"], input[type="radio"] {
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Order Form</h2>
+
+
+<video autoplay loop muted controls>
+    <source src="Test_Me4_7a2e2y.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<form action="/submit-order" method="post">
+    <!-- Text box for user's name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <br><br>
+
+    <label>Select Light Bulbs:</label><br>
+    <input type="checkbox" id="bulb1" name="bulb1" value="2.39">
+    <label for="bulb1">Four 25-watt light bulbs for $2.39</label><br>
+
+    <input type="checkbox" id="bulb2" name="bulb2" value="4.29">
+    <label for="bulb2">Eight 25-watt light bulbs for $4.29</label><br>
+
+    <input type="checkbox" id="bulb3" name="bulb3" value="3.95">
+    <label for="bulb3">Four 25-watt long-life light bulbs for $3.95</label><br>
+
+    <input type="checkbox" id="bulb4" name="bulb4" value="7.49">
+    <label for="bulb4">Eight 25-watt long-life light bulbs for $7.49</label><br>
+
+    <br>
+
+   
+    <label>Payment Method:</label><br>
+    <input type="radio" id="visa" name="payment" value="Visa" required>
+    <label for="visa">Visa</label><br>
+
+    <input type="radio" id="mastercard" name="payment" value="Master Card">
+    <label for="mastercard">Master Card</label><br>
+
+    <input type="radio" id="discover" name="payment" value="Discover">
+    <label for="discover">Discover</label><br>
+
+    <br>
+
+    
+    <input type="submit" value="Submit Order">
+</form>
+
+</body>
+</html>
